@@ -1,28 +1,28 @@
-//complete this code
- const Person = win.Person; const person = new Person("John", 25);
 class Person {
-constructor(name,age)	{
-	this.name = name;
-	this.age = age;
-}
-	get name(){
-		return this.name
-	}
-	set age (){
-		return this.age
-	}
+  constructor(name, age) {
+    this._name = name;
+    this._age = age;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set age(age) {
+    this._age = age;
+  }
 }
 
 class Student extends Person {
-	study(){
-		console.log(this.name)
-	}
+  study() {
+    console.log(`${this.name} is studying.`);
+  }
 }
 
 class Teacher extends Person {
-	teach(){
-		console.log(this.name)
-	}
+  teach() {
+    console.log(`${this.name} is teaching.`);
+  }
 }
 
 // Do not change the code below this line
