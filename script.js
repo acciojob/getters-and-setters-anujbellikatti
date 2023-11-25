@@ -1,5 +1,5 @@
 //complete this code
-
+ const Person = win.Person; const person = new Person("John", 25);
 class Person {
 constructor(name,age)	{
 	this.name = name;
